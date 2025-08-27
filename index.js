@@ -50,9 +50,10 @@ scene.add(hemilight);
 //animation renderer
 function animate(t = 0){
     requestAnimationFrame(animate);
-    mesh.rotation.y = t*0.00001;
+    mesh.rotation.y = t*0.0002;
     renderer.render(scene,camera);
     controls.update();
 }
+
 
 animate();
